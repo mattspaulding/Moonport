@@ -1,0 +1,5 @@
+Player=-1000
+Gun=-990
+Bullet=-950
+Coin=-900
+PlayerDead=-800

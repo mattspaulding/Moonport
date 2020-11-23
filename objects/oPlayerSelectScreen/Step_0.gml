@@ -1,0 +1,25 @@
+if(gamepad_button_check_pressed(0,gp_start))
+{
+	if(global.player1_ready)
+	{
+		SlideTransition(TRANS_MODE.GOTO,rLvMoonport);
+		audio_play_sound(snUiSelect2,10,false)
+	}
+	global.player1_ready=true;
+	audio_play_sound(snUiSelect1,10,false)
+}
+if(gamepad_button_check_pressed(1,gp_start))
+{
+	global.player2_ready=true;
+	audio_play_sound(snUiSelect1,10,false)
+}
+if(gamepad_button_check_pressed(2,gp_start))
+{
+	global.player3_ready=true;
+	audio_play_sound(snUiSelect1,10,false)
+}
+if(gamepad_button_check_pressed(3,gp_start))
+{
+	global.player4_ready=true;
+	audio_play_sound(snUiSelect1,10,false)
+}
